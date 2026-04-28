@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* animated glow background */
+.bg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00f5ff, transparent);
+  filter: blur(120px);
+  animation: float 8s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-50px);}
+}
+
+.card {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  width: 300px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.sub {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.amount {
+  font-size: 40px;
+  color: #00ffae;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.note {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.qr img {
+  width: 140px;
+  margin-top: 15px;
+}
+
+.secure {
+  margin-top: 10px;
+  color: #00ffae;
+  font-size: 12px;
+}
